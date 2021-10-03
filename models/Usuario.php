@@ -31,8 +31,10 @@ class Usuario extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['NOME', 'CPF', 'LOGIN', 'SENHA'], 'required'],
-            [['NOME', 'CPF', 'LOGIN', 'SENHA'], 'string', 'max' => 255],
+            [['NOME', 'CPF', 'LOGIN', 'SENHA'], 'required','message'=>'*Campo obrigatório'],
+            [['NOME', 'LOGIN', 'SENHA'], 'string', 'max' => 255],
+            [['CPF'],'string', 'max' => 13],
+
         ];
     }
 
@@ -42,7 +44,7 @@ class Usuario extends \yii\db\ActiveRecord
     public function attributeLabels()
     {
         return [
-            'ID' => 'ID',
+            'ID' => 'id',
             'NOME' => 'Nome',
             'CPF' => 'Cpf',
             'LOGIN' => 'Login',

@@ -50,7 +50,7 @@ class Vendasproduto extends \yii\db\ActiveRecord
         return [
             'ID' => 'ID',
             'CATEGORIA' => 'Categoria',
-            'QTD' => 'Qtd',
+            'QTD' => 'Quantidade de Produto',
             'USUARIO_ID' => 'Usuario  ID',
             'DATA_VENDA' => 'Data  Venda',
             'PRODUTOS_ID' => 'Produtos  ID',
