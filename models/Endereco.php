@@ -49,11 +49,11 @@ class Endereco extends \yii\db\ActiveRecord
             'ID' => 'ID',
             'RUA' => 'Rua',
             'BAIRRO' => 'Bairro',
-            'NUMERO' => 'Numero',
+            'NUMERO' => 'Número',
             'ESTADO' => 'Estado',
             'CIDADE' => 'Cidade',
-            'CEP' => 'Cep',
-            'USUARIO_ID' => 'Usuario  ID',
+            'CEP' => 'CEP',
+            'USUARIO_ID' => 'Usuario ID',
         ];
     }
 

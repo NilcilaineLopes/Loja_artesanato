@@ -49,8 +49,8 @@ class Vendas extends \yii\db\ActiveRecord
     {
         return [
             'ID' => 'ID',
-            'QTD' => 'Qtd',
-            'DATA_VENDA' => 'Data  Venda',
+            'QTD' => 'Quantidade',
+            'DATA_VENDA' => 'Data da Venda',
             'VALOR' => 'Valor',
             'USUARIO_ID' => 'Usuario  ID',
             'PRODUTOS_ID' => 'Produtos  ID',
