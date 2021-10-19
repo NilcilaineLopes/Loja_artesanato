@@ -33,7 +33,7 @@ class Vendas extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['QTD'], 'required'],
+            [['QTD','DATA_VENDA','VALOR'], 'required'],
             [['QTD', 'USUARIO_ID', 'PRODUTOS_ID'], 'integer'],
             [['DATA_VENDA'], 'safe'],
             [['VALOR'], 'number'],

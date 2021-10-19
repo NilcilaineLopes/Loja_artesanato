@@ -34,9 +34,9 @@ class Endereco extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['RUA', 'BAIRRO', 'NUMERO', 'ESTADO', 'CIDADE', 'CEP'], 'required'],
+            [['RUA', 'BAIRRO', 'NUMERO', 'ESTADO', 'CIDADE', 'CEP'], 'required','message'=>'*Campo Obrigatório'],
             [['NUMERO', 'CEP', 'USUARIO_ID'], 'integer'],
-            [['RUA', 'BAIRRO', 'ESTADO', 'CIDADE'], 'string', 'max' => 255],
+            [['RUA', 'BAIRRO', 'ESTADO', 'CIDADE'], 'string', 'max' => 25],
         ];
     }
 

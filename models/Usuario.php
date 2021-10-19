@@ -31,7 +31,7 @@ class Usuario extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['NOME', 'CPF', 'LOGIN', 'SENHA'], 'required','message'=>'*Campo obrigatório'],
+            [['NOME', 'CPF', 'LOGIN', 'SENHA'], 'required','message'=>'*Campo Obrigatório'],
             [['NOME', 'LOGIN', 'SENHA'], 'string', 'max' => 255],
             [['CPF'],'string', 'max' => 13],
 

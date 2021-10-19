@@ -31,7 +31,7 @@ class Produto extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['NOME', 'DESCRICAO'], 'required','message'=>'*Campo obrigatório'],
+            [['NOME', 'DESCRICAO','PRECO','QUANTIDADE'], 'required','message'=>'*Campo Obrigatório'],
             [['PRECO'], 'number'], 
             [['QUANTIDADE'], 'integer'],
             [['NOME', 'DESCRICAO'], 'string', 'max' => 255],

@@ -29,7 +29,10 @@ class Statusproduto extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['STATUS', 'PRODUTO_ID'], 'integer'],
+            [['PRODUTO_ID'], 'integer'],
+            [['STATUS'], 'boolean'],
+            [['STATUS'], 'required','message'=>'1 = Disponivel 0 = Não disponivel'],
+
             [['PRODUTO_ID'], 'exist', 'skipOnError' => true, 'targetClass' => Produto::className(), 'targetAttribute' => ['PRODUTO_ID' => 'ID']],
         ];
     }
